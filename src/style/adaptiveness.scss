@@ -1,0 +1,24 @@
+// EXTRA LARGE
+@media screen and (min-width: 1200px) {
+  // 1140px
+}
+
+// LARGE
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  // 960px
+}
+
+// MEDIUM
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  // 720px
+}
+
+// SMALL
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  // 540px
+}
+
+// EXTRA SMALL
+@media screen and (max-width: 575px) {
+  // None
+}
