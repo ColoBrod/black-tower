@@ -73,6 +73,10 @@ module.exports = (env, argv) => ({
   },
 
   resolve: {
+    // modules: [path.resolve(__dirname, 'src')],
+    alias: {
+      "~": path.resolve(__dirname, "src"),
+    },
     extensions: ['', '.js', '.jsx'],
   },
   

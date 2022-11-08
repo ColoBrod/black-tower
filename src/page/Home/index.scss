@@ -1,0 +1,41 @@
+section#about {
+  position: relative;
+  background: var(--clr-section-bg);
+
+  .container {
+    position: relative;
+    padding: 60px 0;
+
+  }
+
+  .horizontal-divider {
+    left: 290px;
+    width: 1000px;
+    height: 7px;
+    transform: translateX(-100%);
+  }
+
+  .inner {
+    margin-top: 46px;
+  }
+
+  .img-wrapper {
+    position: relative;
+    width: 338px;
+    height: 417px;
+
+    img, div { position: absolute; }
+
+    img {
+      right: 0; top: 0;
+    }
+
+    div {
+      bottom: 0; left: 0;
+      width: 191px;
+      height: 219px;
+      background: #535353;
+    }
+  }
+
+}

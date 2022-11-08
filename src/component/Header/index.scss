@@ -1,0 +1,20 @@
+header {
+  .top-panel {
+    display: flex;
+    align-items: center;
+    background: black;
+    height: 73px;
+    .container {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+  }
+}

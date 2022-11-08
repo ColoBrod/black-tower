@@ -1,0 +1,20 @@
+footer {
+  background: black;
+  color: white;
+  font-size: 19px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+      font-size: 22px;
+      height: 73px;
+      line-height: 73px;
+      color: white;
+    }
+
+    .navbar {
+
+    }
+  }
+}

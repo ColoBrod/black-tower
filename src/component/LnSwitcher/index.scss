@@ -1,0 +1,26 @@
+.ln-switcher {
+  display: flex;
+  justify-content: space-between;
+  // padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  gap: 0 3px;
+  width: fit-content;
+
+  &__ln {
+    cursor: pointer;
+    user-select: none;
+    font-size: 17px;
+    line-height: 17px;
+    color: white;
+    background: black;
+    padding: 7px 8px 8px;
+
+    &_active {
+      color: black;
+      background: white;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,44 @@
+.navbar {
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.navbar-top {
+  background: white;
+  display: flex;
+  a {
+    font-family: 'Oswald', sans-serif;
+    // font-weight: bold;
+    padding: 0 26px;
+    color: black;
+    height: 175px;
+    line-height: 175px;
+    font-size: 26px;
+
+    img {
+      margin-top: 21px;
+    }
+
+    &.active {
+      color: white;
+      background: black;
+    }
+  }
+
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: end;
+  gap: 90px;
+
+  a {
+    font-size: 22px;
+    height: 73px;
+    line-height: 73px;
+    color: white;
+  }
+
+}

@@ -1,6 +1,6 @@
 {
   "name": "black-tower",
-  "homepage": "https://colobrod.github.io/black-tower",
+  "homepage": "http://92.53.91.152/black-tower",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,6 +31,7 @@
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-localization": "^1.0.19",
     "react-router-dom": "^6.4.3"
   }
 }

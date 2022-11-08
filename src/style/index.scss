@@ -1,1 +1,38 @@
 @import 'adaptiveness.scss';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Oswald:wght@500&display=swap');
+
+
+:root {
+  --clr-section-bg: #F0EEEC;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // margin-top: 58px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 62px;
+}
+
+main .container {
+  min-height: 500px;
+}
+
+section {
+  .horizontal-divider {
+    position: absolute;
+    top: 141px;
+  }
+}
+
+.container {
+  margin: auto;
+
+  h1 {
+    margin: 0;
+    padding: 10px;
+  }
+}

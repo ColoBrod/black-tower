@@ -2,7 +2,7 @@
 import React from "react";
 
 // Router
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from './page/Home';
@@ -11,30 +11,57 @@ import Gallery from './page/Gallery';
 import NotFound from './page/NotFound';
 
 // Components
+import Global from './Global';
+    
 
-const languages = ["en", "ru", "kz", "uz"]; 
+import Header from './component/Header';
+import Footer from './component/Footer';
 
 class App extends React.Component {
-  render() {
-    return (
-      <div className="app">
-        <header>
-          <Link to="/">Home</Link>
-          <Link to="/catalog">Catalog</Link>
-          <Link to="/gallery">Gallery</Link>
-          {/* <a href="/">Home</a> */}
-          {/* <a href="/catalog">Catalog</a> */}
-          {/* <a href="/gallery">Gallery</a> */}
-        </header>
+  constructor(props) {
+    super(props);
+    this.state = {
+      ln: "ru",
+    };
+    // this.state = {
+    //   ln: this.getWebBrowserLn(),
+    // }
+    this.switchLn = this.switchLn.bind(this);
+  }
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/gallery" element={<Gallery />} /> 
-          {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
-      </div>
+  
+
+  render() {
+    const { ln } = this.state;
+    return (
+      <Global.Provider value={{ln}}>
+        <div className="app">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/catalog" element={<Catalog />} />
+              <Route path="/gallery" element={<Gallery />} /> 
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Global.Provider>
     );
+  }
+
+  componentDidMount() {
+    document.addEventListener('switch-ln', this.switchLn);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('switch-ln', this.switchLn);
+  }
+
+  switchLn(e) {
+    const { ln } = e.detail;
+    this.setState({ ln });
   }
 }
 
