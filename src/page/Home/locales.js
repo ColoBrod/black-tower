@@ -4,6 +4,7 @@ const locales = new LocalizedStrings({
   ru: {
     title: "Главная страница",
     about: "О компании",
+    contacts: "Контакты",
   },
   en: {
     title: "Homepage",

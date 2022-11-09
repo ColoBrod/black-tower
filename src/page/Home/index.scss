@@ -1,11 +1,9 @@
 section#about {
-  position: relative;
   background: var(--clr-section-bg);
 
   .container {
     position: relative;
     padding: 60px 0;
-
   }
 
   .horizontal-divider {
@@ -17,14 +15,20 @@ section#about {
 
   .inner {
     margin-top: 46px;
+    display: flex;
+
   }
 
   .img-wrapper {
     position: relative;
+    flex-shrink: 0;
     width: 338px;
     height: 417px;
 
-    img, div { position: absolute; }
+    img, div { 
+      display: block;
+      position: absolute; 
+    }
 
     img {
       right: 0; top: 0;
@@ -38,4 +42,222 @@ section#about {
     }
   }
 
+  .description {
+    flex-grow: 1;
+    margin-left: 100px;
+    text-align: right;
+    padding-top: 32px;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+}
+
+section#gallery {
+  .container {
+    padding: 60px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .slider-wrapper {
+
+    width: 752px;
+    height: 468px;
+    display: flex;
+    align-items: center;
+    padding-top: 26px;
+
+    .left-bar, .right-bar {
+      width: 75px;
+      height: 365px;
+      background: #535353;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    img.arrow-left, img.arrow-right {
+      cursor: pointer;
+      transition: .3s ease;
+      &:hover {
+        -webkit-filter: brightness(150%);
+      }
+    }
+  
+    .img-wrapper {
+      width: 603px;
+      height: 468px;
+    }
+  }
+
+  .aside-images {
+    .img-wrapper {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      width: 329px;
+
+      img {
+
+      }
+
+      .img-description {
+        margin: 21px 0 31px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 28px;
+      }
+    }
+  }
+
+  
+}
+
+section#contacts {
+  background: var(--clr-section-bg);
+
+  .container {
+    position: relative;
+    padding: 60px 0;
+  }
+
+  .horizontal-divider {
+    left: 240px;
+    width: 1000px;
+    height: 7px;
+    transform: translateX(-100%);
+  }
+
+  .inner {
+    padding: 72px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      // gap: 28px 0;
+      padding-top: 94px;
+
+      .item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 28px;
+        
+        &__instagram {
+          margin-bottom: 75px;
+        }
+
+        &-icon {
+          
+          
+        }
+
+        &-description {
+          line-height: 25px;
+          font-size: 25px;
+          margin-left: 26px;
+        }
+      }
+    }
+
+    &-right {
+      .map-wrapper {
+        position: relative;
+        width: 792px;
+        height: 506px;
+
+        > div, > img {
+          position: absolute;
+        }
+
+        > img {
+          z-index: 1;
+          top: 0; left: 0;
+        }
+
+        > div {
+          right: 0; bottom: 0;
+          width: 547px;
+          height: 312px;
+          background: #535353;
+        }
+      }
+    }
+  }
+
+
+}
+
+section#order {
+  .inner {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 90px;
+    &-left {
+      flex-shrink: 0;
+      width: 585px;
+      height: 510px;
+      position: relative;
+      .border-golden, form {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+      }
+      .border-golden {
+        width: 100%; height: 100%;
+      }
+      form {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+
+        padding: 43px 49px 45px 44px;
+
+        h2 {
+          text-align: center;
+          font-size: 49px;
+          font-weight: 400;
+          margin-bottom: 25px;
+        }
+
+        input {
+          background: #F0EEEC;
+          color: #535353;
+          margin-bottom: 15px;
+          flex-basis: 69px;
+          padding-left: 22px;
+          border: none;
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          &[type=submit] {
+            width: 220px;
+            height: 69px;
+            font-size: 29px;
+            margin-top: 39px;
+            background: #535353;
+            color: white;
+            padding: 0;
+            align-self: center;
+          }
+        }
+      }
+    }
+    &-right {
+      .description {
+        text-align: right;
+        font-size: 24px;
+      }
+    }
+  }
 }
