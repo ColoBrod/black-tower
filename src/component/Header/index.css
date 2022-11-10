@@ -4,9 +4,10 @@ header {
     align-items: center;
     background: black;
     height: 73px;
+
     .container {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
     }
   }

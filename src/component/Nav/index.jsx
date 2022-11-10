@@ -1,15 +1,15 @@
 import React from "react";
 
 
-import Global from '../../Global';
+import Global from '~/Global';
 import lc from './locales';
 
 
 import { Link, NavLink } from 'react-router-dom';
-import './index.scss';
+import './index.css';
 
 // Images
-import Logo from '../../assets/img/logo.png';
+import Logo from '~/assets/img/logo.png';
 
 class Nav extends React.Component {
   static contextType = Global;
@@ -25,11 +25,11 @@ class Nav extends React.Component {
 
     return(
       <nav className={`navbar navbar-${position}`}>
-        <NavLink to="/">{lc.home}</NavLink>
-        <NavLink to="/catalog">{lc.catalog}</NavLink>
+        <NavLink className="text-link" to="/">{lc.home}</NavLink>
+        <NavLink className="text-link" to="/catalog">{lc.catalog}</NavLink>
         { position == "top" ? this.renderLogo() : null }
-        <NavLink to="/gallery">{lc.gallery}</NavLink>
-        <Link to="#order">{lc.order}</Link>
+        <NavLink className="text-link" to="/gallery">{lc.gallery}</NavLink>
+        <Link className="text-link" to="#order">{lc.order}</Link>
       </nav>
     );
   }

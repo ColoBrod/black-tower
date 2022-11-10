@@ -1,20 +1,17 @@
 import React from "react";
-import Global from '../../Global';
+import Global from '~/Global';
 
 class Ln extends React.Component {
   static contextType = Global;
 
   constructor(props) {
     super(props);
-    console.log(this.props);
     this.handleClick = this.handleClick.bind(this);
   }
 
   render() {
     const { ln } = this.context;
-    // lc.setLanguage(ln);
     const { short, long } = this.props;
-    console.log(short, long);
     const classActive = (this.props.short == ln) ? "ln-switcher__ln_active"  : "";
 
     return (

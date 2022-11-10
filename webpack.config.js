@@ -25,7 +25,7 @@ module.exports = (env, argv) => ({
       // CSS
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: [
           // MiniCssExtractPlugin.loader,
           {
@@ -33,6 +33,12 @@ module.exports = (env, argv) => ({
           },
           {
             loader: "css-loader",
+            options: {
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
           },
         ],
       },
@@ -41,7 +47,7 @@ module.exports = (env, argv) => ({
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-          MiniCssExtractPlugin.loader,
+          // MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -88,10 +94,10 @@ module.exports = (env, argv) => ({
       chunks: ['main']
     }),
     // new HtmlWebpackLiveReload(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',      
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: '[name].css',
+    //   chunkFilename: '[id].css',      
+    // }),
   ],
 
   devServer: {

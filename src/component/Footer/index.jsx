@@ -1,8 +1,8 @@
 import React from "react";
 
-import Nav from '../Nav';
+import Nav from '~/component/Nav';
 
-import './index.scss';
+import './index.css';
 
 class Footer extends React.Component {
   render() {

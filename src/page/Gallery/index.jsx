@@ -1,7 +1,7 @@
 // Libraries
 import React from "react";
 
-import Global from '../../Global';
+import Global from '~/Global';
 import lc from './locales';
 
 // Components

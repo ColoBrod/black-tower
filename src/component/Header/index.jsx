@@ -1,9 +1,9 @@
 import React from "react";
 
-import Nav from '../Nav';
-import LnSwitcher from "../LnSwitcher";
+import Nav from '~/component/Nav';
+import LnSwitcher from "~/component/LnSwitcher";
 
-import './index.scss';
+import './index.css';
 
 class Header extends React.Component {
   render() {

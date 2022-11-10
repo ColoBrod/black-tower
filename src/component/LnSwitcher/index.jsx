@@ -1,7 +1,7 @@
 import React from "react";
 import Ln from './Ln';
 
-import './index.scss';
+import './index.css';
 
 const languages = {
   kz: "KZ",
@@ -12,12 +12,12 @@ const languages = {
 
 class LnSwitcher extends React.Component {
   render() {
-    // Object.keys(languages).forEach((ln, i) => <Ln short={ln} long={languages[ln]} key={i} />)
-    Object.keys(languages).forEach((ln, i) => console.log(ln, i))
     return (
       <div className="ln-switcher">
         {
-          Object.keys(languages).map((ln, i) => <Ln short={ln} long={languages[ln]} key={i} />)
+          Object.keys(languages).map((ln, i) => (
+            <Ln short={ln} long={languages[ln]} key={i} />
+          ))
         }
       </div>
     );
