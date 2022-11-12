@@ -1,7 +1,11 @@
 import React from "react";
 import Ln from './Ln';
 
-import './index.css';
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 const languages = {
   kz: "KZ",

@@ -18,15 +18,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 
-main .container {
-  min-height: 500px;
+.h2 h2 {
+  display: inline-block;
 }
 
-section {
-  .horizontal-divider {
-    position: absolute;
-    top: 141px;
-  }
+main .container {
+  min-height: 500px;
 }
 
 .container {

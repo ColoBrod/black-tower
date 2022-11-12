@@ -1,0 +1,15 @@
+.h2 {
+  position: relative;
+
+  h2 {
+
+  }
+
+  .horizontal-divider {
+    position: absolute;
+    bottom: -25px;
+    width: 1300px;
+    height: 7px;
+    transform: translateX(-100%);
+  }
+}

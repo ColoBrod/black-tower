@@ -3,7 +3,11 @@ import React from "react";
 import Nav from '~/component/Nav';
 import LnSwitcher from "~/component/LnSwitcher";
 
-import './index.css';
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 class Header extends React.Component {
   render() {

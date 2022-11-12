@@ -2,7 +2,7 @@ import LocalizedStrings from 'react-localization';
 
 const locales = new LocalizedStrings({
   ru: {
-    contacts: "Контакты",
+    title: "Контакты",
   },
   en: {
   },

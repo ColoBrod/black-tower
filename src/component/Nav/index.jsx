@@ -1,15 +1,17 @@
 import React from "react";
 
-
 import Global from '~/Global';
 import lc from './locales';
 
+import Link from './CustomLink';
 
-import { Link, NavLink } from 'react-router-dom';
-import './index.css';
 
-// Images
-import Logo from '~/assets/img/logo.png';
+// Styles
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 class Nav extends React.Component {
   static contextType = Global;
@@ -23,22 +25,29 @@ class Nav extends React.Component {
     const { position } = this.props;
     lc.setLanguage(ln);
 
+
+    let data = [
+      { type: "regular", path: "/", text: lc.home  },
+      { type: "regular", path: "/catalog", text: lc.catalog  },
+      { type: "logo", path: "/", text: ""  },
+      { type: "regular", path: "/gallery", text: lc.gallery  },
+      { type: "anchor", path: "/#order", text: lc.order  },
+    ];
+
+    if (position == "bottom") data = data.filter(el => el.type != "logo");
+
     return(
       <nav className={`navbar navbar-${position}`}>
-        <NavLink className="text-link" to="/">{lc.home}</NavLink>
-        <NavLink className="text-link" to="/catalog">{lc.catalog}</NavLink>
-        { position == "top" ? this.renderLogo() : null }
-        <NavLink className="text-link" to="/gallery">{lc.gallery}</NavLink>
-        <Link className="text-link" to="#order">{lc.order}</Link>
+        <ul>
+          {
+            data.map((el, i) => (
+              <Link key={i} type={el.type} path={el.path}>
+                {el.text}
+              </Link>
+            ))
+          }
+        </ul>
       </nav>
-    );
-  }
-
-  renderLogo() {
-    return (
-      <Link to="/">
-        <img className="logo" src={Logo} alt="Company Logo" />
-      </Link>
     );
   }
 }

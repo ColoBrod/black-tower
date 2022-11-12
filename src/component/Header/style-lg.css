@@ -1,0 +1,11 @@
+@import 'style/media-queries';
+@media (--lg) {
+  header {
+    .top-panel {
+      height: 63px;
+    }
+  }
+}
+
+
+ 

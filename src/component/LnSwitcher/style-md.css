@@ -1,0 +1,10 @@
+@import 'style/media-queries';
+@media (--md) {
+  .ln-switcher {
+    &__ln {
+      font-size: 11px;
+      line-height: 11px;
+      padding: 6px 6px;
+    }
+  }
+}

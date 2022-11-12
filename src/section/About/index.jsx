@@ -4,9 +4,10 @@ import lc from './locales';
 import './index.css';
 
 // Images
-import HorizontalDivider from '~/assets/img/horizontal-divider.png';
 import Img from '~/assets/img/section-about.jpeg';
 
+// Components
+import H2 from '~/component/H2';
 
 class About extends React.Component {
   static contextType = Global;
@@ -18,12 +19,7 @@ class About extends React.Component {
     return (
       <section id="about">
         <div className="container">
-          <h2>{lc.about}</h2>
-          <img 
-            src={HorizontalDivider} 
-            alt="Horizontal Divider" 
-            className="horizontal-divider"
-          />
+          <H2>{lc.about}</H2>
           <div className="inner">
             <div className="img-wrapper">
               <div></div>

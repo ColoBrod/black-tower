@@ -1,7 +1,6 @@
 .ln-switcher {
   display: flex;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.1);
   gap: 0 3px;
   width: fit-content;
 

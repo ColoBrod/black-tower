@@ -18,8 +18,8 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 
 import './style/normalize.css';
-import './style/adaptiveness.css';
 import './style/index.css';
+import './style/adaptiveness.css';
 
 class App extends React.Component {
   constructor(props) {

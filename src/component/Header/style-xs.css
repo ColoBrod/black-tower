@@ -1,0 +1,13 @@
+@import 'style/media-queries';
+@media (--xs) {
+  header {
+    .top-panel {
+      height: 64px;
+      .container {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+

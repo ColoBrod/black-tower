@@ -6,13 +6,6 @@ section#about {
     padding: 60px 0;
   }
 
-  .horizontal-divider {
-    left: 337px;
-    width: 1000px;
-    height: 7px;
-    transform: translateX(-100%);
-  }
-
   .inner {
     margin-top: 46px;
     display: flex;

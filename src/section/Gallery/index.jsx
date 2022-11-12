@@ -11,13 +11,25 @@ import 'swiper/css/effect-fade';
 import 'swiper/less/autoplay';
 
 // Images
-import ArrowLeft from '~/assets/img/arrow-left.png';
-import ArrowRight from '~/assets/img/arrow-right.png';
+import ArrowLeft from '~/assets/img/arrow-left.svg';
+import ArrowRight from '~/assets/img/arrow-right.svg';
 import ImgAside1 from '~/assets/img/gallery/aside-1.png';
 import ImgAside2 from '~/assets/img/gallery/aside-2.png';
 
 // Swiper Images
 import Img1 from '~/assets/img/gallery/1.png';
+import Img2 from '~/assets/img/gallery/2.jpg';
+import Img3 from '~/assets/img/gallery/3.jpg';
+import Img4 from '~/assets/img/gallery/4.jpg';
+import Img5 from '~/assets/img/gallery/5.jpg';
+
+const slides = [
+  { src: Img1, alt: "Слайд 1" },
+  { src: Img2, alt: "Слайд 2" },
+  { src: Img3, alt: "Слайд 3" },
+  { src: Img4, alt: "Слайд 4" },
+  { src: Img5, alt: "Слайд 5" },
+]
 
 class Gallery extends React.Component {
   static contextType = Global;
@@ -55,15 +67,9 @@ class Gallery extends React.Component {
                 nextEl: '.arrow-right',
               }}
             >
-              <SwiperSlide>
-                <img className="slide" src={Img1} alt="Слайд 1" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="slide" src={ImgAside1} alt="Слайд 2" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="slide" src={ImgAside2} alt="Слайд 3" />
-              </SwiperSlide>
+              {
+                slides.map((slide, i) => this.renderSlide(slide, i))
+              }
             </Swiper>
             <div className="right-bar">
               <img 
@@ -87,6 +93,15 @@ class Gallery extends React.Component {
         </div>
       </section>
     )
+  }
+
+  renderSlide(slide, i) {
+    const { src, alt } = slide;
+    return (
+      <SwiperSlide key={i}>
+        <img className="slide" src={src} alt={alt} />
+      </SwiperSlide>     
+    );
   }
 
 }

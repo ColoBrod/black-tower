@@ -1,0 +1,12 @@
+@import 'style/media-queries';
+@media (--sm) {
+  header {
+    .top-panel {
+      height: 64px;
+      .container {
+        justify-content: center;
+      }
+    }
+  }
+}
+

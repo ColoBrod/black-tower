@@ -3,12 +3,14 @@ import Global from '~/Global';
 import lc from './locales';
 import './index.css';
 
-import HorizontalDivider from '~/assets/img/horizontal-divider.png';
-import IconPhone from '~/assets/icon/phone.png';
-import IconMail from '~/assets/icon/mail.png';
-import IconInstagram from '~/assets/icon/instagram.png';
-import IconMap from '~/assets/icon/map.png';
+import IconPhone from '~/assets/icon/phone.svg';
+import IconMail from '~/assets/icon/mail.svg';
+import IconInstagram from '~/assets/icon/instagram.svg';
+import IconMap from '~/assets/icon/map.svg';
 import Iframe from 'react-iframe'
+
+// Components
+import H2 from "~/component/H2";
 
 class Contacts extends React.Component {
   static contextType = Global;
@@ -20,12 +22,7 @@ class Contacts extends React.Component {
     return (
       <section id="contacts">
         <div className="container">
-          <h2>{lc.contacts}</h2>
-          <img 
-            src={HorizontalDivider} 
-            alt="Horizontal Divider" 
-            className="horizontal-divider"
-          />
+          <H2>{lc.title}</H2>
           <div className="inner">
             <div className="inner-left">
               <div className="item item__phone">

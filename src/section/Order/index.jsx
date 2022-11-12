@@ -4,7 +4,7 @@ import lc from './locales';
 import './index.css';
 
 
-import BorderGolden from '~/assets/img/border-golden.png';
+import BorderGolden from '~/assets/img/border-golden.svg';
 
 class Order extends React.Component {
   render() {

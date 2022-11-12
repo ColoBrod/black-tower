@@ -6,13 +6,6 @@ section#contacts {
     padding: 60px 0;
   }
 
-  .horizontal-divider {
-    left: 275px;
-    width: 1000px;
-    height: 7px;
-    transform: translateX(-100%);
-  }
-
   .inner {
     padding: 72px 0 0;
     display: flex;
@@ -35,7 +28,7 @@ section#contacts {
         }
 
         &-icon {
-          
+          width: 41px;
           
         }
 
