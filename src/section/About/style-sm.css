@@ -1,0 +1,39 @@
+@import 'style/media-queries';
+@media (--sm) {
+  section#about {
+    .container {
+      padding: 39px 0 34px;
+    }
+
+    .inner {
+      margin-top: 37px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img-wrapper {
+      width: 225px;
+      height: 276px;
+
+      img {
+        width: 196px;
+        height: 255px;
+      }
+  
+      div {
+        width: 126px;
+        height: 144px;
+      }
+    }
+
+    .description {
+      padding: 21px 0 0;
+      margin-left: 0;
+      text-align: center;
+      /* width: 543px; */
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+

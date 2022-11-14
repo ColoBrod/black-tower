@@ -9,13 +9,24 @@ html {
   font-family: 'Jost', sans-serif;
 }
 
+body::after {
+  display: block;
+  position: fixed;
+  content: 'screen-size';
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  font-weight: 600;
+  color: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  /* // margin-top: 58px; */
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 62px;
-  line-height: 62px;
-  letter-spacing: 5px;
+  font-size: 73.3px;
+  font-weight: 500;
+  height: 62px;
+  line-height: 55px;
 }
 
 .h2 h2 {
@@ -23,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main .container {
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .container {

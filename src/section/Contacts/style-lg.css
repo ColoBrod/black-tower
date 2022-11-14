@@ -1,0 +1,54 @@
+@import 'style/media-queries';
+@media (--lg) {
+  section#contacts {
+    .container {
+      padding: 52px 0;
+    }
+
+    .inner {
+      padding: 62px 0 0;
+
+      &-left {
+        padding-top: 81px;
+        
+        .item {
+          margin-bottom: 36px;
+          &-icon {
+            width: 35px;
+            height: auto;
+          }
+
+          &-description {
+            font-size: 25.7px;
+            line-height: 31px;
+            margin-left: 23px;
+          }
+
+          &__instagram {
+            margin-bottom: 65px;
+          }
+        }
+      }
+
+      &-right {
+        .map-wrapper {
+          width: 677px;
+          height: 432px;
+
+          > img, iframe {
+            width: 624px;
+            height: 391px;
+          }
+
+          > div {
+            width: 466px;
+            height: 264px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+ 

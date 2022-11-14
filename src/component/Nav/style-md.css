@@ -1,0 +1,29 @@
+@import 'style/media-queries';
+@media (--md) {
+  .navbar-top ul {
+    li {
+      width: 122px;
+      height: 110px;
+
+      a.text-link {
+        height: 18px;
+        font-size: 20px;
+        line-height: 18px;
+      }
+  
+      img.logo {
+        width: 70px;
+        height: 76px;
+      }
+    }
+    
+  }
+
+  .navbar-bottom ul {
+    gap: 57px;
+
+    a {
+      font-size: 15.4px;
+    }
+  }
+}

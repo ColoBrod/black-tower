@@ -16,6 +16,7 @@ import Global from './Global';
 
 import Header from './component/Header';
 import Footer from './component/Footer';
+// import ScreenSize from "~/component/ScreenSize";
 
 import './style/normalize.css';
 import './style/index.css';
@@ -40,6 +41,7 @@ class App extends React.Component {
     return (
       <Global.Provider value={{ln}}>
         <div className="app">
+          {/* <ScreenSize /> */}
           <Header />
           <main>
             <Routes>

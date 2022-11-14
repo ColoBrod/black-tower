@@ -1,0 +1,49 @@
+@import 'style/media-queries';
+@media (--md) {
+  section#order {
+    .inner {
+      padding: 38px 0 40px;
+      gap: 0 44px;
+
+      &-left {
+        width: 374px;
+        height: 326px;
+
+        form {
+          padding: 28px 31px 28px 30px;
+
+          h2 {
+            font-size: 32px;
+            line-height: 39px;
+            font-weight: 500;
+          }
+
+          input {
+            flex-basis: 43px;
+            margin-bottom: 11px;
+            padding-left: 13px;
+            font-size: 11.8px;
+            &[type=submit] {
+              margin-bottom: 0;
+              width: 140px;
+              height: 43px;
+              font-size: 19.2px;
+              margin-top: 26px;
+            }
+          }
+        }
+
+      }
+
+      &-right {
+        .description {
+          font-size: 16.1px;
+          line-height: 19px;
+          font-weight: 400;
+        }
+      }
+
+    }
+  }
+}
+

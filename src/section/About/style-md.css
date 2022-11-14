@@ -1,0 +1,35 @@
+@import 'style/media-queries';
+@media (--md) {
+  section#about {
+    .container {
+      padding: 39px 0;
+    }
+
+    .inner {
+      margin-top: 29px;
+    }
+
+    .img-wrapper {
+      width: 217px;
+      height: 267px;
+
+      img {
+        width: 189px;
+        height: 245px;
+      }
+  
+      div {
+        width: 121px;
+        height: 139px;
+      }
+    }
+
+    .description {
+      margin-left: 64px;
+      padding-top: 43px;
+      font-size: 16.1px;
+      line-height: 19px;
+    }
+  }
+}
+

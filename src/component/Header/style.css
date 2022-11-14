@@ -3,7 +3,7 @@ header {
     display: flex;
     align-items: center;
     background: black;
-    height: 73px;
+    height: 69px;
 
     .container {
       display: flex;

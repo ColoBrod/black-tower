@@ -1,10 +1,14 @@
 import React from "react";
 import Global from '~/Global';
 import lc from './locales';
-import './index.css';
-
 
 import BorderGolden from '~/assets/img/border-golden.svg';
+
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 class Order extends React.Component {
   render() {

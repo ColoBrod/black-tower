@@ -1,15 +1,38 @@
+@import 'style/media-queries';
+
 .h2 {
   position: relative;
 
   h2 {
-
+    
   }
 
   .horizontal-divider {
     position: absolute;
     bottom: -25px;
     width: 1300px;
-    height: 7px;
+    height: 8px;
     transform: translateX(-100%);
+
+    @media (--lg) {
+      width: 406px;
+      height: 7px;
+      bottom: -22px;
+    }
+    @media (--md) {
+      width: 350px;
+      height: 5px;
+      bottom: -16px;
+    }
+    @media (--sm) {
+      width: 292px;
+      height: 3px;
+      bottom: -11px;
+    }
+    @media (--xs) {
+      width: 243px;
+      height: 2px;
+      bottom: -7px;
+    }
   }
 }

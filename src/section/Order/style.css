@@ -31,7 +31,7 @@ section#order {
           letter-spacing: 0;
           text-align: center;
           font-size: 49px;
-          font-weight: 400;
+          font-weight: 500;
           margin-bottom: 25px;
         }
 
@@ -42,10 +42,13 @@ section#order {
           flex-basis: 69px;
           padding-left: 22px;
           border: none;
+          font-size: 18.3px;
+          font-weight: 400;
           &:nth-child(4) {
             margin-bottom: 0;
           }
           &[type=submit] {
+            font-weight: 400;
             width: 220px;
             height: 69px;
             font-size: 29px;

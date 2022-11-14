@@ -1,7 +1,6 @@
 import React from "react";
 import Global from '~/Global';
 import lc from './locales';
-import './index.css';
 
 // Libraries
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,6 +21,13 @@ import Img2 from '~/assets/img/gallery/2.jpg';
 import Img3 from '~/assets/img/gallery/3.jpg';
 import Img4 from '~/assets/img/gallery/4.jpg';
 import Img5 from '~/assets/img/gallery/5.jpg';
+
+// Styles 
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 const slides = [
   { src: Img1, alt: "Слайд 1" },
@@ -79,6 +85,9 @@ class Gallery extends React.Component {
                 draggable="false" 
               />
             </div>
+          </div>
+          <div className="slider-description">
+            Описание фото
           </div>
           <div className="aside-images">
             <div className="img-wrapper">

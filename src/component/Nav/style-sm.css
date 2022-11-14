@@ -1,0 +1,34 @@
+@import 'style/media-queries';
+@media (--sm) {
+  .navbar-top ul {
+    justify-content: flex-start;
+
+    li.active { width: 124px; }
+
+    li {
+      height: 112px;
+      &.text-link-wrapper {
+        padding: 0 12px;
+      }
+
+      a.text-link {
+        height: 18px;
+        font-size: 21px;
+        line-height: 20px;
+      }
+  
+      &.logo-wrapper {
+        order: -1;
+        width: 74px;
+        margin-right: 66px;
+      }
+
+      img.logo {
+        width: 74px;
+        height: 80px;
+        margin: 16px 0;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,42 @@
+@import 'style/media-queries';
+@media (--xs) {
+  section#about {
+    .container {
+      padding: 28px 0 0;
+    }
+
+    .inner {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img-wrapper {
+      width: 167px;
+      height: 205px;
+
+      img {
+        width: 146px;
+        height: 189px;
+      }
+  
+      div {
+        width: 93px;
+        height: 107px;
+      }
+    }
+
+    .description {
+      padding: 20px 0 13px;
+      margin-left: 0;
+      text-align: center;
+      /* width: 543px; */
+      font-size: 14.9px;
+      line-height: 18px;
+      /* p:nth-child(2) {
+        margin-bottom: 0;
+      } */
+    }
+  }
+}
+

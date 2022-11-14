@@ -1,0 +1,36 @@
+@import 'style/media-queries';
+@media (--xs) {
+  .navbar-top ul {
+    justify-content: flex-start;
+    gap: 16px;
+
+    li.active { min-width: 85px; }
+
+    li {
+      width: fit-content;
+      padding: 0;
+      height: 77px;
+      &.text-link-wrapper {
+        /* padding: 0 12px; */
+      }
+
+      a.text-link {
+        height: 13px;
+        font-size: 14.2px;
+        line-height: 14px;
+      }
+  
+      &.logo-wrapper {
+        order: -1;
+        /* margin-right: 4px; */
+      }
+
+      img.logo {
+        width: 55px;
+        height: 59px;
+        margin: 5px 0;
+      }
+    }
+    
+  }
+}

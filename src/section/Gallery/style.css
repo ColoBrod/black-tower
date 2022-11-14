@@ -14,6 +14,8 @@ section#gallery {
     align-items: center;
     padding-top: 26px;
 
+    
+
     .left-bar, .right-bar {
       width: 75px;
       height: 365px;
@@ -45,6 +47,10 @@ section#gallery {
     }
   }
 
+  .slider-description {
+    display: none;
+  }
+
   .aside-images {
     .img-wrapper {
 
@@ -54,15 +60,11 @@ section#gallery {
       align-items: center;
       width: 329px;
 
-      img {
-
-      }
-
       .img-description {
         margin: 21px 0 31px;
         height: 28px;
         line-height: 28px;
-        font-size: 28px;
+        font-size: 33.5px;
       }
     }
   }

@@ -1,7 +1,6 @@
 import React from "react";
 import Global from '~/Global';
 import lc from './locales';
-import './index.css';
 
 import IconPhone from '~/assets/icon/phone.svg';
 import IconMail from '~/assets/icon/mail.svg';
@@ -11,6 +10,12 @@ import Iframe from 'react-iframe'
 
 // Components
 import H2 from "~/component/H2";
+
+import './style.css';
+import './style-lg.css';
+import './style-md.css';
+import './style-sm.css';
+import './style-xs.css';
 
 class Contacts extends React.Component {
   static contextType = Global;

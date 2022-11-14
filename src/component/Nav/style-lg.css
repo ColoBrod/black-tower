@@ -2,11 +2,13 @@
 @media (--lg) {
   .navbar-top ul {
     li {
-      width: 166px;
-      height: 151px;
+      width: 164px;
+      height: 147px;
 
       a.text-link {
-        font-size: 23px;
+        height: 23px;
+        font-size: 27px;
+        line-height: 26px;
       }
   
       img.logo {
@@ -14,6 +16,15 @@
         height: 102px;
       }
     }
-    
+  }
+
+
+
+  .navbar-bottom ul {
+    gap: 76px;
+
+    a {
+      font-size: 20.6px;
+    }
   }
 }

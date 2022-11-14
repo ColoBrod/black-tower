@@ -2,7 +2,7 @@
 @media (--xs) {
   header {
     .top-panel {
-      height: 64px;
+      height: 45px;
       .container {
         width: 100%;
         justify-content: center;

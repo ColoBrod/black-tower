@@ -2,9 +2,9 @@
 @media (--md) {
   .ln-switcher {
     &__ln {
-      font-size: 11px;
+      font-size: 14px;
       line-height: 11px;
-      padding: 6px 6px;
+      padding: 4px;
     }
   }
 }
